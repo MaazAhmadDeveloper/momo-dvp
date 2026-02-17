@@ -41,11 +41,12 @@ export default function Home({ session }) {
         return (
             <div className="max-w-3xl mx-auto p-4">
                 <Header session={session} />
-                <p className="text-center mt-10 text-gray-500 bg-white">
+                <SearchArticles setArticles={setArticles} setLoading={setLoading} />
+                <p className="text-center mt-0 text-gray-500 bg-white">
                     No articles found{" "}
                     {session && (
                         <Link to="/create-article" className="text-blue-500 underline">
-                            Create the first article
+                            Create your own article
                         </Link>
                     )}
                 </p>

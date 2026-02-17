@@ -38,7 +38,7 @@ const SearchArticles = ({ setArticles, setLoading }) => {
     <form onSubmit={searchQueryHandler} className="mb-6 -mt-4 flex  rounded-lg bg-white">
       <input
         type="text"
-        placeholder="Search articles..."
+        placeholder="Search articles title here..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="w-full outline-none p-2 shadow"
